@@ -14,8 +14,6 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 public class DemoSecurityConfig {
 
-  // add support for JDBC ... no more hardcoded users :-)
-
   @Bean
   public UserDetailsManager userDetailsManager(DataSource dataSource) {
 
@@ -42,5 +40,4 @@ public class DemoSecurityConfig {
 
     return http.build();
   }
-
 }
